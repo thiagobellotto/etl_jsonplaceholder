@@ -7,7 +7,7 @@ It was developed with a custom version of Airflow (via Docker-Compose), by acces
 After cloning the repository, go to the folder and run the code below (be sure to have the docker up and running!): 
 
 `
-docker-compose -f docker-compose.yaml up airflow-init && docker-compose up
+mkdir logs plugins && docker-compose -f docker-compose.yaml up airflow-init && docker-compose up
 `
 
 
