@@ -43,4 +43,12 @@ But also, by letting the entrypoint and adjusting the port from the host to the 
 
 The GUI is available via <input type="text"><a href="http://localhost:8080/">localhost:8080</a></input>.
 
+## Flow from the DAGs
+
+![image](https://user-images.githubusercontent.com/17580929/169189278-4b2abf85-bdb4-4dc5-bd89-e4acf4c287b4.png)
+
+
+## Query the database via PGAdmin
+
+![image](https://user-images.githubusercontent.com/17580929/169189339-7e957cca-8cd4-4ec1-affc-1a99b17662cc.png)
 
