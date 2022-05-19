@@ -3,12 +3,20 @@ Project built for an ETL pipeline with Airflow, Docker and PostgreSQL.
 
 It was developed with a custom version of Airflow (via Docker-Compose), by accesing the API <input type="text"><a href="https://jsonplaceholder.typicode.com/">JSONPlaceHolder</a></input> (via /posts and /users), and transforming and loading the informations into a PostgreSQL inside the Docker Container.
 
+## Create an .env file
+When running for the first time, it is necessary to create an .env file. Store this two variables inside:
+
+`AIRFLOW_UID=50000`
+
+`AIRFLOW_GID=0`
+
+
 ## Entrypoint
 After cloning the repository, go to the folder and run the code below (be sure to have the docker up and running!): 
 
-`
-mkdir logs plugins && docker-compose -f docker-compose.yaml up airflow-init && docker-compose up
-`
+For the first time: `mkdir logs plugins`
+
+Everytime: `docker-compose -f docker-compose.yaml up airflow-init && docker-compose up`
 
 
 ## First configs
