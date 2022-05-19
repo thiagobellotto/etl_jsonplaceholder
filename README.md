@@ -22,13 +22,30 @@ The entrypoint for the PostgreSQL is the .init file, which is going to create:
 
 
 ## PGAdmin
-It is useful as a GUI for the user, to query the data. The standard profile created is:
+It is useful as a GUI for the user, to query the data. It is available via: <input type="text"><a href="http://localhost:5050/">localhost:5050</a></input>. The standard profile created is:
 
 `username: airflow@airflow.com`
 
 `password: airflow`
 
-It is available via: <input type="text"><a href="http://localhost:5050/">localhost:5050</a></input>.
+To connect with the server, go to "Add New Server", name the server and set the below infos:
+
+`Host name/Address: host.docker.internal`
+
+`Port: 15432`
+
+`Maintenance Database: airflow`
+
+`Username: airflow`
+
+`Password: airflow`
+
+
+## Conections
+The connections needed are created programatically, there is no need to insert them manually. There are two:
+
+- HTTP, for connecting with the API;
+- Postgres, to connect with the database.
 
 
 ## Airflow custom configs
